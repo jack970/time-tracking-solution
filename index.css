@@ -1,0 +1,253 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(226, 43%, 10%);
+    height: 97vh;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 1.1rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(236, 100%, 87%);
+}
+
+a:active {
+    color:#fff;
+}
+
+.body-content {
+    display: flex;
+    height: 100%;
+    margin: 0 9rem;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrap {
+    font-weight: 300;
+    padding: 2rem 5rem 5rem 2rem;
+}
+
+.user {
+    position: relative;
+    background-color: hsl(246, 80%, 60%);
+    width: min-content;
+    border-radius: 1rem;
+}
+
+.normal {
+    cursor: pointer;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+
+.normal:focus {
+    background-color:hsl(235, 45%, 61%);
+}
+
+.semi-border {
+    margin-top: -1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.card-wrap img {
+    margin-bottom: 1.5rem;
+    width: 4rem;
+    border: .3rem solid #fff;
+    border-radius: 50%;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.user-size {
+    font-size: 2.2rem;
+}
+
+.high-size {
+    font-size: 3rem;
+    margin: 1.5rem auto .8rem auto;
+}
+
+.description {
+    font-size: .9rem;
+    margin-bottom: 0;
+    color: hsl(236, 100%, 87%);
+}
+
+.card-bg {
+    height: 4rem;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0 0
+}
+
+.sized {
+    width: 10rem;
+    padding-right: 2rem;
+}
+
+#menu ul a:focus {
+    color: #fff;
+}
+
+.normal:focus {
+    background-color: hsl(228deg 45% 44%);
+}
+
+.overlay {
+    position: relative;
+    margin-top: -1.5rem;
+}
+
+.negrit-500 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.ellipse {
+    background-image: url(images/icon-ellipsis.svg);
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.row-gap {
+    row-gap: 2rem;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto auto;
+}
+
+.Work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(images/icon-work.svg);
+}
+
+.Exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(images/icon-exercise.svg);
+}
+
+.Play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(images/icon-play.svg);
+}
+
+.Social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(images/icon-social.svg);
+}
+
+.Study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(images/icon-study.svg);
+}
+
+.Self {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.Care {
+    background-image: url(images/icon-self-care.svg);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 5rem 1rem;
+        height: initial;
+    }
+
+    .body-content {
+        display: grid;
+        justify-content: initial;
+        margin: 0;
+        row-gap: 1rem;
+    }
+
+    .row-gap {
+        grid-template-columns: auto;
+        row-gap: 1.5rem;
+        width: 100%;
+    }
+
+    .card-wrap {
+        padding: 2rem;
+    }
+
+    .user {
+        width: -webkit-fill-available;
+        display: inline-flex;
+        padding: 2rem 2rem;
+    }
+
+    .user-size {
+        font-size: 1.5rem;
+    }
+
+    .content-user{
+        margin: 1rem auto 0 1rem;
+        padding-left: 0;
+    }
+
+    .card-wrap img {
+        margin-bottom: 0;
+    }
+
+    #menu {
+        padding-bottom: 1rem;
+    }
+
+    #menu ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        font-size: 1.3rem;
+    }
+
+    .sized {
+        width: auto;
+    }
+
+    .high-size {
+        margin: .5rem 0 0 0;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .timeframes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+}

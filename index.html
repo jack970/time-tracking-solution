@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="ScriptsJs/app.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="body-content">
+    <div>
+      <div class="card-wrap user">
+        <img src="images/image-jeremy.png" alt="avatar">
+        <div class="content-user">
+          <p class=description>Report for</p>      
+          <h1 class="title user-size">Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="card-wrap normal semi-border" id="menu">
+        <ul>
+          <a tabindex="1" onclick="getOption('daily')" href="#daily"><li>Daily</li></a>
+          <a tabindex="2" onclick="getOption('weekly')" href="#weekly"><li>Weekly</li></a>
+          <a tabindex="3" onclick="getOption('monthly')" href="#monthly"><li>Monthly</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="row-gap"></div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jack970</a>.
+  </div>
+</body>
+</html>
